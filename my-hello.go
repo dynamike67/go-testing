@@ -3,7 +3,7 @@ package main
 import (
     "fmt"
 
-    "github.com/dynamike67/stringutil"
+    "github.com/dynamike67/go-testing/stringutil"
 )
 
 func main() {
