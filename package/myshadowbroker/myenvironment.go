@@ -4,17 +4,18 @@ package myshadowbroker
 type Environment struct {
 	Project          string
 	Branch           string
-	CloudConfig      *CloudConfig
-	DeploymentConfig *DeploymentConfig
+	//CloudConfig      *CloudConfig
+	//DeploymentConfig *DeploymentConfig
 }
 
 // NewEnvironment constructs a new Environment struct based on the provided data
-func NewEnvironment(project string, branch string, cloudConfigData string, deploymentConfigFile string) *Environment {
+//func NewEnvironment(project string, branch string, cloudConfigData string, deploymentConfigFile string) *Environment {
+func NewEnvironment(project string, branch string) *Environment {
 	env := Environment{
 		Project:          project,
 		Branch:           branch,
-		DeploymentConfig: parseDeploymentConfig(deploymentConfigFile),
-		CloudConfig:      decodeCloudConfig(cloudConfigData),
+		//DeploymentConfig: parseDeploymentConfig(deploymentConfigFile),
+		//CloudConfig:      decodeCloudConfig(cloudConfigData),
 	}
 
 	return &env
